@@ -1,0 +1,7 @@
+<!ELEMENT uczelnia (kierunek+)>
+<!ELEMENT kierunek (nazwaKierunku, student, student?, student?)>
+<!ELEMENT nazwaKierunku (#PCDATA)>
+<!ELEMENT student (imie, imie?, nazwisko, indeks)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT indeks (#PCDATA)>

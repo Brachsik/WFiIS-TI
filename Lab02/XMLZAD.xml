@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="XMLZAD.css"?>
+<!DOCTYPE uczelnia SYSTEM "XMLZAD.dtd">
+
+<uczelnia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XMLZAD.xsd">
+
+  <kierunek>
+  <nazwaKierunku>Informatyka stosowana</nazwaKierunku>
+  <student>
+    <imie>Janek</imie>
+    <imie>Zbyszek</imie>
+    <nazwisko>Abacki</nazwisko>
+    <indeks>100</indeks>
+  </student>
+  
+    <student>
+    <imie>Antoni</imie>
+    <nazwisko>Bbacki</nazwisko>
+    <indeks>400</indeks>
+  </student>
+  
+    <student>
+    <imie>Rudolf</imie>
+    <imie>Zbyszek</imie>
+    <nazwisko>Cbacki</nazwisko>
+    <indeks>120</indeks>
+  </student>
+
+</kierunek>
+
+<kierunek>
+  <nazwaKierunku>Informatyka niestosowana</nazwaKierunku>
+  <student>
+    <imie>Łukasz</imie>
+    <imie>Franciszek</imie>
+    <nazwisko>Zontar</nazwisko>
+    <indeks>130</indeks>
+  </student>
+  
+    <student>
+    <imie>Kuba</imie>
+    <nazwisko>Bumbacki</nazwisko>
+    <indeks>140</indeks>
+  </student>
+
+</kierunek>
+</uczelnia>
+

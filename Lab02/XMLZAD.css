@@ -1,0 +1,66 @@
+uczelnia
+{
+	background-color: lightgray;
+	width: 1200px;
+}
+
+kierunek
+{
+	width: 350px;
+
+	display:block; 
+    border: 1px solid silver;
+    margin:0.5em; 
+    padding:0.5em; 
+    background-color:whitesmoke;
+}
+
+nazwaKierunku
+{
+	font-size: 25px;
+	display:block; 
+    border: 1px solid silver;
+    margin:0.5em; 
+    padding:0.5em; 
+    background-color:lightgreen;
+}
+
+student:nth-child(2n-2)
+{
+	background-color: lightsalmon;
+}
+
+student
+{
+	display: block;
+	margin:0.5em; 
+    padding:0.5em; 
+	border-color: pink;
+	border-width: 2px;
+	border-style: solid;
+}
+
+indeks
+{
+	color: darkred;
+}
+indeks:nth-child(2n)
+{
+	display: block;
+}
+
+imie:nth-child(1)
+{
+	margin-right: 5px;
+	color: red;
+	text-decoration: underline;
+}
+imie:nth-child(2)
+{
+	color: darkred;
+}
+
+nazwisko
+{
+	color: darkgreen;
+}
