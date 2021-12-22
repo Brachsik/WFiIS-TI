@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Zad 3</title>
+<style>
+body {
+background: #dddddd;
+}
+#canvas {
+   margin: 10px;
+   padding: 10px;
+   background: #ffffff;
+   border: thin inset #aaaaaa;
+}
+</style>
+
+</head>
+<body>
+<canvas id='canvas' width='600' height='400'>
+   Canvas not supported
+</canvas>
+<script>
+var canvas = document.getElementById("canvas");
+var context = canvas.getContext("2d");
+ context.strokeStyle = "#ddd";
+
+for (var x = 0.5; x < 600; x += 10) {
+  context.moveTo(x, 0);
+  context.lineTo(x, 400);
+}
+for (var y = 0.5; y < 400; y += 10) {
+  context.moveTo(0, y);
+  context.lineTo(600, y);
+}
+context.stroke();
+
+
+context.beginPath();
+context.moveTo(0, 360);
+context.lineTo(240, 360);
+context.moveTo(260, 360);
+context.lineTo(500, 360);
+context.moveTo(495, 380);
+context.lineTo(500, 360);
+context.lineTo(495, 340);
+
+context.moveTo(60, 400);
+context.lineTo(60, 247);
+context.moveTo(60, 227);
+context.lineTo(60, 25);
+context.moveTo(65, 30);
+context.lineTo(60, 25);
+context.lineTo(55, 30);
+
+context.strokeStyle = "#00A";
+context.stroke();
+
+
+context.font = "bold 12px sans-serif";
+context.fillText("x", 248, 364);
+context.fillText("y", 58, 240);
+
+a=1;
+b=100;
+x=400;
+context.beginPath();
+
+  context.moveTo(20, 400 - b);
+  context.lineTo(x, 400 - a*x+b);
+  context.strokeStyle = "black";
+context.stroke();
+
+context.font = "bold 24px sans-serif";
+context.fillText("y = ax + b", 240, 200);
+
+</script>
+
+</body>
+</html>

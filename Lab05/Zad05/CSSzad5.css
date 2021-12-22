@@ -1,0 +1,42 @@
+body
+{
+	max-width: 400px;
+	margin: auto;
+	background-color: #FFECFF;
+}
+
+table
+{
+
+	background-color: lightcyan;
+	border-collapse: collapse;
+
+}
+
+thead
+{
+	background-color: #F68EF3;
+}
+tbody
+{
+	background-color: #FCE4FB;
+}
+
+.red
+{
+	color:  red;
+}
+
+.pink
+{
+	color: salmon;
+}
+
+.green
+{
+	color: green;
+}
+.blue
+{
+	color: blue;
+}

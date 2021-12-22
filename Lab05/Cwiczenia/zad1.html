@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Zad 1</title>
+</head>
+<body>
+<script>
+function validate(){
+if ((document.form1.pole1.value=="")||(document.form1.pole3.value=="")||(document.form1.pole4.value=="")||(document.form1.test.options.selectedIndex==0)){
+	string = "";
+	if(document.form1.pole1.value=="")
+	{
+		string+="Uzupełnij pole Nazwisko!\n"
+	}
+	if(document.form1.pole3.value=="")
+	{
+		string+="Uzupełnij pole Imie!\n"
+	}
+	if(document.form1.pole4.value=="")
+	{
+		string+="Uzupełnij pole Email!\n"
+	}
+	if(document.form1.test.options.selectedIndex==0)
+	{
+		string+="Wybierz rok!\n"
+	}
+
+	alert(string);
+return false; }
+else if((document.form1.pole1.value.length<4)||(document.form1.pole3.value.length<4)) 
+{
+alert ("Pole nazwisko oraz imie powinny zawierac co najmniej 4 znaki");
+return false;
+}
+else
+{
+	alert("Nazwisko: "+document.form1.pole1.value+
+		"\nImie: "+document.form1.pole3.value+
+		"\nEmail: "+document.form1.pole4.value+
+		"\nUwagi: "+document.form1.pole2.value);
+return true;
+}
+}
+</script>
+
+<form name="form1" onsubmit="return validate()">
+<p>Nazwisko</p>
+<input type="text" size="20" name="pole1" /><br/>
+<p>Imie</p>
+<input type="text" size="35" name="pole3" /><br/>
+<p>Email</p>
+<input type="text" size="35" name="pole4" /><br/>
+
+<p>
+<select name="test" size="1">
+<option value="0">Wybierz rok</option>
+<option value="1">Rok 1</option>
+<option value="2">Rok 2</option>
+<option value="3">Rok 3</option>
+</select>
+</p>
+<p>Uwagi</p>
+<textarea name="pole2" rows="3" cols="25"></textarea><br/>
+<input type="submit" name="B1" value="Submit" />
+
+</form>
+</body>
+</html>
